@@ -1,0 +1,18 @@
+footer {
+    background-color: #1a1a1a;
+    color: #d7ccc8;
+    padding: 50px 5%;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+footer a {
+    margin-right: 15px;
+    text-decoration: none;
+    color: #fff;
+    font-weight: normal;
+}
