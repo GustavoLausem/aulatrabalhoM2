@@ -11,8 +11,9 @@
 </head>
 
 <body class="">
-    <h1>Coffee Day</h1>
+
     <header class=" shadow border border-bottom border-success">
+        <h1>Coffee Day</h1>
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#">Coffee Day</a>
@@ -29,12 +30,12 @@
                 </div>
             </div>
             <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
-                aria-controls="offcanvasRight">Informações</button>
+                aria-controls="offcanvasRight" aria-label="Abrir informações de localização">Localização</button>
         </nav>
     </header>
     <main>
         <div class="card mb-3 ">
-            <img src="./imagens/cafe 1.jpg " style="height: 600px;" class="card-img-top" alt="Xicara de Café">
+            <img src="./imagens/cafe 1.jpg " style="height: 800px;" class="card-img-top" alt="Xicara de Café">
             <div class="card-body">
                 <h5 class="card-title">Conheça nossos produtos.</h5>
                 <p class="card-text">Nosso site foi criado para oferecer praticidade e uma experiência simples e
@@ -45,8 +46,19 @@
             </div>
         </div>
         <div class="border-bottom border-dark shadow mt-3"></div>
-        <section id="produtos">
-            <article id="allprods" class="d-flex mt-4 justify-content-around">
+        <div class="row g-3">
+            <div class="col-md-6">
+                <label for="text" class="form-label">Nome</label>
+              <input type="text" class="form-control" placeholder="Insira seu nome" aria-label="Nome de usuário">
+            </div>
+            <div class="col-md-6">
+                <label for="inputEmail4" class="form-label">Email</label>
+                <input type="email" class="form-control" id="inputEmail4" placeholder="Insira seu Email">
+              </div>
+          </div>
+          <div class="border-bottom border-dark shadow mt-3"></div>
+        <section id="produtos1">
+            <article id="allprods" class="d-flex flex-column flex-md-row mt-4 m-4 p-4 justify-content-around">
                 <div class="card" style="width: 18rem;">
                     <img src="./imagens/cafe 14.jpg" class="card-img-top" alt="Café Expresso">
                     <div class="card-body">
@@ -54,7 +66,8 @@
                         <p class="card-text">Desenvolvido para valorizar o aroma e a qualidade do café,
                             ele proporciona uma bebida limpa, suave e cheia de personalidade, perfeita para o dia a dia.
                         </p>
-                        <a href="#" class="btn btn-success">R$ 25,00 á Embalagem c/ 6 und</a>
+                        <a href="#" class="btn btn-success" aria-label="Ver preço do filtro de café premium">R$ 25,00 á
+                            Embalagem c/ 6 und</a>
                     </div>
                 </div>
                 <div class="card" style="width: 18rem;">
@@ -62,9 +75,10 @@
                     <div class="card-body">
                         <h5 class="card-title">Filtro de Café</h5>
                         <p class="card-text">Nosso filtro de café é ideal para garantir uma extração equilibrada e um
-                            sabor mais puro em cada preparo. 
+                            sabor mais puro em cada preparo.
                         </p>
-                        <a href="#" class="btn btn-success">R$ 25,00 á Embalagem c/ 6 und</a>
+                        <a href="#" class="btn btn-success" aria-label="Ver preço do filtro de café">R$ 25,00 á
+                            Embalagem c/ 6 und</a>
                     </div>
                 </div>
                 <div class="card" style="width: 18rem;">
@@ -73,29 +87,33 @@
                         <h5 class="card-title">Copo de Isopor descartável</h5>
                         <p class="card-text">Nosso copo de isopor descartável é prático e eficiente, ideal para manter a
                             temperatura do café por mais tempo. .</p>
-                        <a href="#" class="btn btn-success">R$ 20,00 á Caixa c/15 Fardo</a>
+                        <a href="#" class="btn btn-success" aria-label="Ver preço do copo">R$ 20,00 á Caixa c/15
+                            Fardo</a>
                     </div>
                 </div>
                 <div class="card" style="width: 18rem;">
                     <img src="./imagens/cafe 13.jpg" class="card-img-top" alt="Melhor maneira de começar o dia">
                     <div class="card-body">
                         <h5 class="card-title">Copo de Isopor descartável</h5>
-                        <p class="card-text">Nosso copo de isopor descartável é Leve e resistente, ele oferece conforto no uso e é
+                        <p class="card-text">Nosso copo de isopor descartável é Leve e resistente, ele oferece conforto
+                            no uso e é
                             perfeito para quem busca praticidade no dia a .</p>
-                        <a href="#" class="btn btn-success">R$ 20,00 á Caixa c/15 Fardo</a>
+                        <a href="#" class="btn btn-success" aria-label="Ver preço do copo de Isopor">R$ 20,00 á Caixa
+                            c/15 Fardo</a>
                     </div>
                 </div>
             </article>
         </section>
-        <section id="produtos">
-            <article id="allprods" class="d-flex mt-4 justify-content-around">
+        <section id="produtos2">
+            <article id="allprods" class="d-flex flex-column flex-md-row mt-4 m-4 p-4 justify-content-around">
                 <div class="card" style="width: 18rem;">
                     <img src="./imagens/cafe 16.jpg" class="card-img-top" alt="Café Expresso">
                     <div class="card-body">
                         <h5 class="card-title">Café Expresso</h5>
                         <p class="card-text">O melhor café que você tomara hoje se encontra aqui, com uma ótima seleção
                         </p>
-                        <a href="#" class="btn btn-success">Conhecer</a>
+                        <a href="#" class="btn btn-success"
+                            aria-label="Conhecer Produtos relacionados a Café Expresso">Conhecer</a>
                     </div>
                 </div>
                 <div class="card" style="width: 18rem;">
@@ -104,7 +122,17 @@
                         <h5 class="card-title">Café Gelado </h5>
                         <p class="card-text">Aqui você encontra os melhores pordutos da região, independente do seu modo
                             de consumo ou preparo, o grande valor predominante ficara visivel</p>
-                        <a href="#" class="btn btn-success">Conhecer</a>
+                        <a href="#" class="btn btn-success"
+                            aria-label="Conhecer Produtos relacionados a Café Expresso Gelado">Conhecer</a>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <img src="./imagens/Garrafa.jpg" class="card-img-top" alt="Melhor maneira de começar o dia">
+                    <div class="card-body">
+                        <h5 class="card-title">Começe seu dia da Melhor Maneira</h5>
+                        <p class="card-text">Com a nossa garrafa de café, você leva praticidade e sabor para qualquer
+                            lugar. </p>
+                        <a href="#" class="btn btn-success" aria-label="Conhecer a nossa garrafa de café">Conhecer</a>
                     </div>
                 </div>
                 <div class="card" style="width: 18rem;">
@@ -113,16 +141,7 @@
                         <h5 class="card-title">Começe seu dia da Melhor Maneira</h5>
                         <p class="card-text">Começe seu dia da melhor maneira possivel e acomapanhado da melhor bebida
                             ja feita</p>
-                        <a href="#" class="btn btn-success">Conhecer</a>
-                    </div>
-                </div>
-                <div class="card" style="width: 18rem;">
-                    <img src="./imagens/cafe 6.jpg" class="card-img-top" alt="Melhor maneira de começar o dia">
-                    <div class="card-body">
-                        <h5 class="card-title">Começe seu dia da Melhor Maneira</h5>
-                        <p class="card-text">Começe seu dia da melhor maneira possivel e acomapanhado da melhor bebida
-                            ja feita</p>
-                        <a href="#" class="btn btn-success">Conhecer</a>
+                        <a href="#" class="btn btn-success" aria-label="">Conhecer</a>
                     </div>
                 </div>
             </article>
@@ -132,7 +151,7 @@
         <div class="footer-links">
             <div class="site-map">
                 <a href="index.html">Home</a>|
-                <a href="#"> Produtos</a>
+                <a href="prod.html"> Produtos</a>
             </div>
             <div class="social-media">
                 <h3>Desenvolvedor</h3>
@@ -146,8 +165,29 @@
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
         crossorigin="anonymous"></script>
 
-    <body>
+    <section id="Localização">
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasRightLabel">Localização</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <h3 class="text-success">Onde nos escontrar:</h3>
+                <p>Nossa empresa está localizada na cidade de Presidente Prudente, um lugar que nos inspira a oferecer
+                    sempre o melhor em cada detalhe. Atendemos com dedicação e qualidade, levando até você uma
+                    experiência
+                    única e especial em cada momento.</p>
+                <h2 class="text-success">Horario de atendimento:</h2>
+                <p>7:30 á 17:30</p>
+                <p>Dé Segunda á Sexta</p>
+                <h2 class="text-success">Contato:</h2>
+                <p> Telefone: 18- 99326-5431</p>
 
-    </body>
+
+            </div>
+        </div>
+    </section>
+
+</body>
 
 </html>

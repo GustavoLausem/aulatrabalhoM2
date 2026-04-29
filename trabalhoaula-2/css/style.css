@@ -16,3 +16,9 @@ footer a {
     color: #fff;
     font-weight: normal;
 }
+@media (min-width: 800px) {
+    .card-img-top {
+        height: 250px;
+        object-fit: cover;
+    }
+}
