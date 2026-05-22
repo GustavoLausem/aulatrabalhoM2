@@ -10,7 +10,10 @@
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 </head>
 
-<body class="">
+<body>
+
+    <div class="topo-img"></div>
+
     <header class=" shadow border border-bottom border-success">
         <h1>Coffee Day</h1>
         <nav class="navbar navbar-expand-lg bg-body-tertiary" aria-label="Menu principal">
@@ -22,15 +25,15 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                    <div class="navbar-nav">
-                        <a class="nav-link" href="compra.html">Carrinho</a>
-                        <a class="nav-link" href="prod.html">Produtos</a>
+                    <div class="navbar-nav " >
+                        <a class="btn btn-outline-dark" href="compra.html">Carrinho</a>
+                        <a class="btn btn-outline-dark"  href="prod.html">Produtos</a>
                     </div>
                 </div>
             </div>
-            <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+            <button class="btn btn-outline-dark"  type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
                 aria-controls="offcanvasRight">Localização</button>
-            <a class="btn btn-primary" href="cadastro.html" role="button">Cadastrar</a>
+            <a class="btn btn-outline-dark" href="cadastro.html" role="button">Cadastrar</a>
         </nav>
     </header>
 
@@ -57,12 +60,12 @@
                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
                     data-bs-slide="prev">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
+                    <span class="visually-hidden">Previsualização</span>
                 </button>
                 <button class="carousel-control-next" type="button" data-bs-target="#carouselExample"
                     data-bs-slide="next">
                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
+                    <span class="visually-hidden">Proximo</span>
                 </button>
             </div>
 
@@ -75,7 +78,7 @@
                 </div>
             </div>
             <article id="allprods" class="d-flex flex-column flex-md-row mt-4 m-4 p-4 justify-content-around">
-                <div class="card" style="width: 18rem;">
+                <div class="card card-hover" style="width: 18rem;">
                     <img src="./imagens/cafe 2.jpg" class="card-img-top" alt="Café Expresso">
                     <div class="card-body">
                         <h5 class="card-title">Café Expresso</h5>
@@ -85,7 +88,7 @@
                             aria-label="Conhecer mais sobre Café Expresso">Conhecer</a>
                     </div>
                 </div>
-                <div class="card" style="width: 18rem;">
+                <div class="card card-hover" style="width: 18rem;">
                     <img src="./imagens/cafe 10.jpg" class="card-img-top" alt="Café Gelado">
                     <div class="card-body">
                         <h5 class="card-title">Café Gelado </h5>
@@ -95,7 +98,7 @@
                             aria-label="Conhecer mais sobre Café Gelado">Conhecer</a>
                     </div>
                 </div>
-                <div class="card" style="width: 18rem;">
+                <div class="card card-hover" style="width: 18rem;">
                     <img src="./imagens/cafe 6.jpg" class="card-img-top" alt="Melhor maneira de começar o dia">
                     <div class="card-body">
                         <h5 class="card-title">Começe seu dia da Melhor Maneira</h5>
@@ -107,8 +110,8 @@
                 </div>
             </article>
         </section>
-        <section id="ofertas" class="d-flex flex-column flex-md-row mt-4 m-4 p-4 justify-content-around">
-            <div class="card mb-3" style="max-width: 740px;">
+        <section id="ofertas" class="d-flex flex-column flex-md-row gap-5 m-4 p-4 justify-content-around">
+            <div class="card card-hover mb-3" style="max-width: 740px;">
                 <div class="row g-0">
                     <div class="col-md-4">
                         <img src="./imagens/cafe3.jpg" class="img-fluid rounded-start"
@@ -128,14 +131,14 @@
                     </div>
                 </div>
             </div>
-            <div class="card mb-3" style="max-width: 740px;">
+            <div class="card card-hover mb-3" style="max-width: 740px;">
                 <div class="row g-0">
                     <div class="col-md-4">
                         <img src="./imagens/cafe 5.jpg" class="img-fluid rounded-start"
                             alt="Duas pessoas Tomando Café juntamente com um pequeno capcake">
                     </div>
                     <div class="col-md-8">
-                        <div class="card-body">
+                        <div class="card-body ">
                             <h5 class="card-title">Sempre esta presente no dia a dia</h5>
                             <p class="card-text">Escolha sempre começar seu dia da melhor maneira e sempre acompanhado
                                 da melhor bebida dos dias atuais para sempre ficar disposto para seguir enfrente</p>
@@ -150,16 +153,16 @@
     <footer>
         <div class="footer-links">
             <div class="site-map">
-                <a href="index.html">Home</a>|
+                <a href="index.html">  Inicio</a>|
                 <a href="prod.html"> Produtos</a>
             </div>
             <div class="social-media">
                 <h3>Desenvolvedor</h3>
                 <h3>GustavoLausem!!</h3>
-                <a href="https://linkedin.com">LinkedIn</a>
-                <a href="https://instagram.com">Instagram</a>
+                <a href="https://linkedin.com"> <i class="bi bi-linkedin"></i> LinkedIn</a>
+                <a href="https://instagram.com"> <i class="bi bi-instagram"></i> Instagram</a>
 
-                <h4>Contato <br>gustavolausem1@gmail.com</h4>
+                <h4><i class="bi bi-telephone"></i>Contato <br>gustavolausem1@gmail.com</h4>
             </div>
         </div>
     </footer>
